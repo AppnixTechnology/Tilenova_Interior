@@ -1,0 +1,32 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tileGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#066bb9" />
+    </linearGradient>
+    <linearGradient id="tileGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#066bb9" />
+      <stop offset="100%" stop-color="#034d85" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#066bb9" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Back Tile -->
+  <rect x="25" y="15" width="44" height="44" rx="8" transform="rotate(45 47 37)" fill="url(#tileGrad2)" opacity="0.85" />
+  
+  <!-- Interlocking Front Tiles -->
+  <rect x="45" y="35" width="44" height="44" rx="8" transform="rotate(45 67 57)" fill="url(#tileGrad1)" filter="url(#shadow)" />
+  <rect x="25" y="55" width="44" height="44" rx="8" transform="rotate(45 47 77)" fill="url(#tileGrad2)" />
+
+  <!-- Inner Diamond Cutouts & Gold Accents -->
+  <rect x="52" y="42" width="22" height="22" rx="4" transform="rotate(45 63 53)" fill="#ffffff" />
+  <polygon points="63,45 66,53 63,61 60,53" fill="url(#goldAccent)" />
+  
+  <circle cx="63" cy="53" r="3.5" fill="#066bb9" />
+</svg>
